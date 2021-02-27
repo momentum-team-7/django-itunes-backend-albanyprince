@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <script src="{% static 'app.js' %}"></script>
+  <title>Music Search</title>
+</head>
+<body>
+  <header>Slappers</header>
+  <br><br>
+  
+    <form class="music-search">
+
+        <input class="search-artist" type="text" placeholder="Search Artist, Song, Album"><input type="submit" value="Search" id="search-button">
+   </form>
+    
+  
+
+  <br>
+
+  <center><div class="music-player">
+      <div class="album-artwork"></div>
+    <span>
+      
+      <audio class="play-audio" controls autoplay></audio></span>
+    </div></center>
+  
+  
+  <div class="display-results">
+   
+  </div>
+      
+  
+  
+</body> 
+</html>
